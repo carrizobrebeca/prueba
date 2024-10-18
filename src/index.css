@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .clip-custom {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 75% 85%, 50% 100%, 25% 85%, 0 100%, 0 25%);
+  }
+}
